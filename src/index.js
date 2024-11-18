@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { DetaProvider } from './Context/ShareDeta';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <DetaProvider>
     <App />
+    </DetaProvider>
+  
   </React.StrictMode>
 );
 
